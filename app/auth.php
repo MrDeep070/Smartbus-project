@@ -1,6 +1,7 @@
 session_start();
 require_once '../includes/db.php';
 
+
 // Registration Logic
 if ($_GET['action'] === 'register') {
     $hashed_password = password_hash($_POST['password'], PASSWORD_DEFAULT);
