@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.seat-item {
+    transition: all 0.2s ease;
+}
+
+#seatMap {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+@media (min-width: 768px) {
+    #seatMap {
+        grid-template-columns: repeat(10, minmax(0, 1fr));
+    }
+}
